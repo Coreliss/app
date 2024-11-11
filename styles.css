@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #00bcd4, #03a9f4);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    padding: 20px;
+    background-color: #0288d1;
+    border-bottom: 3px solid #01579b;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.flags-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    position: relative;
+    animation: float 4s infinite ease-in-out;
+}
+
+.flag {
+    width: 50px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.flag-wave {
+    animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.clock-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.clock-card h2 {
+    margin: 0 0 5px;
+    font-size: 1.5em;
+}
+
+.clock-card p {
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: bold;
+}
